@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Histogram</title>
+  <meta name="description" content="Histogram">
+  <meta name="author" content="Andrew T">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main">
+  	<div class="title">
+  		<img src="./images/chart.png" height='64px' width='64px'/>
+  		<h1 style="display:inline-block;vertical-align: middle;">Histogram</h1>
+  	</div>
+  	<div class="graph">
+  		<svg id="histogram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="100%" viewBox="0 0 1000 450"/>
+  	</div>
+  	<h3>Enter Data: (Comma-Seperated) </h3>
+  	<div class="inputs">
+  		<div class="container"><input id = "userInput" placeholder="10,10,12,10,14" style="width:100%"></input></div>
+  		<div class="submit" onclick="loadSVG()">Update</div>
+  	</div>
+  	<div id="errorMessage"></div>
+  </div>
+  <script src="scripts/histogram.js"></script>
+</body>
+</html>
